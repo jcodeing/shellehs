@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# ---------------------------------------------------------------------
+# ADB Screenshot
+# ---------------------------------------------------------------------
+adb shell /system/bin/screencap -p /sdcard/screenshot.png
+curr=`date "+%Y-%m-%d %H:%M:%S"`
+name=${pwd}"screenshot-"${curr}".png" # ${pwd} Print Working Directory
+adb pull /sdcard/screenshot.png "${name}"

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for i in `ls *.apk`; # 'order' or $(order)
+do
+echo $i
+versionName=$(aapt dump badging $i | grep versionName | awk '{print $4}' | awk -F[\'] '{print $2}') # aapt in sdk/build-tools
+versionCode=$(aapt d badging $i | grep versionCode | awk '{print $3}' | awk -F[\'] '{print $2}')
+newName=$versionName"_"$versionCode".apk"
+echo $newName
+mv $i $newName
+done

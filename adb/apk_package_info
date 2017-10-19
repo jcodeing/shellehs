@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for i in `ls *.apk`; # 'order' or $(order)
+do
+echo $i
+aapt d badging $i | grep package
+
+done
