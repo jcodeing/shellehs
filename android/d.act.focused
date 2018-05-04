@@ -1,0 +1,4 @@
+#!/bin/bash
+
+adb shell dumpsys activity | grep mFocusedActivity --color=always
+#adb shell dumpsys window windows | grep -E 'mCurrentFocus|mFocusedApp' --color=always

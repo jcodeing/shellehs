@@ -1,0 +1,13 @@
+# vi ~/.profile
+
+#####################shellehs#####################
+
+export SHELLEHS=$KWORK/shellehs
+PATH=$PATH:$SHELLEHS/android
+PATH=$PATH:$SHELLEHS/temp
+PATH=$PATH:$SHELLEHS/wget
+#PATH=$PATH:$SHELLEHS/...
+
+#####################shellehs#####################
+
+# source ~/.profile

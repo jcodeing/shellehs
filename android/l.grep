@@ -1,0 +1,3 @@
+#!/bin/bash
+
+adb logcat | grep $1 --color=always

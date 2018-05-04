@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# --------------------wget common [option] dir--------------------
+# e.g. wgetd -A '*.apk' host/dir_name/
+
+wget -r -np -nd -nH $@

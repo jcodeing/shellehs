@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#current activity
+echo $(d.act.focused | awk '{print $4}' | awk -F[\/] '{print $2}')
